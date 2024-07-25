@@ -22,6 +22,12 @@ public enum AccountType implements BaseValueObject{
         }
     },
 
+    ATM {
+        public boolean isAtm() {
+            return true;
+        }
+    },
+
     CARD {
         public boolean isCard() {
             return true;
@@ -39,6 +45,10 @@ public enum AccountType implements BaseValueObject{
         return false;
     }
 
+    public boolean isAtm() {
+        return false;
+    }
+
     public boolean isCard() {
         return false;
     }
@@ -49,6 +59,8 @@ public enum AccountType implements BaseValueObject{
             return CURRENT;
         }else if (this.isLoan()) {
             return LOAN;
+        }else if (this.isAtm()) {
+            return ATM;
         }else if (this.isCard()) {
             return CARD;
         }
