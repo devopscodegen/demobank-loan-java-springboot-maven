@@ -2,7 +2,7 @@
 - Organization : example-bank
 - Organizational Unit : orgunit02
 - Application : app02
-- Architecture : backend, microservice, rest api
+- Architecture : backend, monolith, rest api
 - Component : loan
 - Programming Language : java
 - Middleware : springboot, relational database, kafka
